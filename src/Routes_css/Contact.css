@@ -1,0 +1,208 @@
+a {
+  text-decoration: none;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+.contactDirect div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 8px;
+  border: 1px solid gray;
+}
+.contactDirect div:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.397);
+}
+.contactDirect {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  margin: 20px 0px;
+}
+.contactIcons {
+  color: #3ab7f6;
+  width: 25px;
+  height: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.contactTitle {
+  padding: 20px;
+  text-align: center;
+}
+.contactDirect div a {
+  font-weight: bold;
+  color: gray;
+}
+.contactDirect div a:hover {
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.274);
+}
+.contactSection {
+  width: 85vw;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(243, 244, 246);
+}
+.myInfo {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 1.5rem;
+}
+.contactForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+h2,
+h3 {
+  text-align: center;
+  display: inline-block;
+}
+.contactForm div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contactForm label,
+button {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.contactForm button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  background-color: #3ab7f6;
+  cursor: pointer;
+}
+.contactForm button:hover {
+  background-color: #2cb5fa;
+}
+.contactForm label {
+  color: rgb(75, 85, 99);
+}
+.contactForm input,
+textarea {
+  background-color: rgba(209, 213, 219);
+  border: none;
+}
+#message {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+.contactForm div input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0.75rem;
+  border-radius: 10px;
+  height: 4vh;
+  border: none;
+}
+.myInfo img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 87px;
+}
+.myInfo p {
+  text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (max-widh:810px) {
+  .contactDirect {
+    flex-direction: row;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .contactDirect {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .myInfo {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    gap: 1rem;
+    margin-top: 30px;
+  }
+
+  .contactForm {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .contactDirect {
+    display: flex;
+    flex-direction: row;
+  }
+  .contactSection{
+    flex-direction: row;
+  }
+  .myInfo {
+    padding: 50px;
+  }
+  .contactForm {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding-top: 0;
+  }
+  .contactDirect {
+    flex-direction: column;
+  }
+  .contactSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .myInfo {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    gap: 1rem;
+    margin-top: 30px;
+  }
+  .contactForm {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}

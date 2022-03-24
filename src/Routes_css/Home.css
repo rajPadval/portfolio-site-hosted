@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#home {
+  width: auto;
+  height: auto;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 2rem;
+}
+.btn {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  width: 4rem;
+  padding: 5px 12px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 22px;
+  outline: none;
+  border: 2px solid #3ab7f6;
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: #3ab7f6;
+  color: white;
+  box-shadow: 0px 2px 5px black;
+}
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background: linear-gradient(to right,#BFF098,#6FD6FF); */
+}
+.intro {
+  padding: 20px;
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* border: 2px solid rgba(255, 255, 255, 0.075); */
+  border-radius: 15px;
+  backdrop-filter: blur(500px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.39);
+}
+.intro:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to right, #bff098, #6fd6ff);
+}
+.intro h2 {
+  font-size: 30px;
+}
+.intro h3 {
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.intro p {
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.svg {
+  width: 30px;
+  height: 30px;
+}
+.cardContainer {
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.342);
+}
+.cardContainer h3,
+p {
+  text-align: center;
+}
+.cardContainer:hover {
+  transform: scale(1.03, 1.03);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px black;
+}
+.imgHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 8px;
+  background: linear-gradient(to right, #bff098, #6fd6ff);
+}
+.infoHolder {
+  padding: 10px;
+}
+
+.skillTitle {
+  padding: 0px 3rem;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  display: block;
+  /* background: linear-gradient(to right,#BFF098,#6FD6FF);  */
+  margin: 5rem 0px;
+  margin-bottom: 3rem;
+}
+
+.introImg {
+  background-color: #bff098;
+  padding-top: 50px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  background: linear-gradient(to bottom, #6fd6ff, transparent);
+  overflow: hidden;
+}
+@media (max-width: 1536px) {
+  .intro {
+    height: 55vh;
+  }
+  .brand {
+    width: 15%;
+  }
+  .grid{
+      gap: 1.5rem ;
+  }
+  
+  .infoHolder{
+      text-align: center;
+      margin: auto;
+  }
+  ul {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .intro {
+    width: 38%;
+    height: 60vh;
+  }
+  .btnContainer {
+    padding-top: 2rem;
+  }
+  .brand {
+    width: 20%;
+  }
+  
+}
+@media (max-width: 1024px) {
+  .intro {
+    width: 45vw;
+    height: 60vh;
+  }
+  .brand {
+    width: 20%;
+  }
+  .ul {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .introImg {
+    padding-top: 8px;
+    height: 25vh;
+  }
+  .main {
+    justify-content: space-evenly;
+  }
+  .intro {
+    width: 44vw;
+    height: 30vw;
+  }
+  .btnContainer {
+    padding-top: 0.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  .intro {
+    width: 60vw;
+    height: 40vh;
+  }
+  .intro p {
+    font-size: 15px;
+  }
+  .intro h2 {
+    text-align: center;
+  }
+  .btn {
+    width: 30vw;
+  }
+  .btnContainer {
+    text-align: center;
+    margin: 15px;
+  }
+  .introImg {
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-top: 50px;
+    border-radius: 250px 250px;
+    height: 55vw;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand {
+    width: 100%;
+  }
+}
